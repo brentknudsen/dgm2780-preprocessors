@@ -1,13 +1,14 @@
 //FONTS
-$font-header: 'Salsa', cursive;
-$font-body: 'Lora', serif;
+$font-header: 'Salsa', Arial, cursive;
+$font-body: 'Lora', Times, serif;
 
 //COLORS
 $color-bodybackground: #f1edd9;
 $color-bodyfont: #a75e3f;
+$color-hover: transparentize($color-bodyfont,.7);
 $color-titlefont: #B29100;
-$color-primary: #0006FF;
-$color-secondary: #0004B2;
+
+
 $color-text: #444;
 //DEVICE WIDTHS
 $desktop-min: 1025px;
@@ -16,24 +17,16 @@ $tablet-min: 481px;
 $phone-max: 480px;
 
 //MIXIN-EXTENDED (no arguments) still need extend/inheritance ones
-.card{
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  box-sizing: border-box;
-  display: inline-block;
-}
 
 //MIXIN = FUNCTION(takes,arguments)
 @mixin size($width,$height: $width){
   width: $width;
   height: $height;
 }
-
-@mixin box-shadow($shadow){
-  -moz-box-shadow:    $shadow;
-  -webkit-box-shadow: $shadow;
-  box-shadow:         $shadow;
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
 }
 
 .box-sizing{

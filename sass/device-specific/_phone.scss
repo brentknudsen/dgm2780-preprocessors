@@ -30,7 +30,6 @@ nav {
   width: 100%;
   float: none;
   color: #FFD72C;
-  @include gradient-linear($color-primary, lighten($color-primary,10%));
   ul {
     li {
       float: left;
@@ -51,7 +50,6 @@ nav {
         li {
           float: none;
           /*border-right: none;*/
-          border-bottom: 1px solid $color-secondary;
         }
       }
       &:hover {

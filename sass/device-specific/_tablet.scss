@@ -34,7 +34,6 @@ nav ul li a {
   border-top: 1px solid rgba(255,255,255,0.2); /*---blue---*/
   border-bottom: 1px solid rgba(0,0,0,0.8); /*---lighter blue---*/
   color: #FFD72C;
-  @include gradient-linear($color-primary,lighten($color-primary,10%));
 }
 nav ul li a:hover {
   background: #333333;
@@ -53,7 +52,6 @@ nav ul li ul li a {
   padding: .5em;
   padding-left: 15px;
   font-size: .7em;
-  background: $color-primary;
 }
 nav ul li.selected ul li a {
   color: rgba(255,215,44,0.7);

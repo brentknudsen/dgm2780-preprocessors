@@ -45,13 +45,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.card {
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  box-sizing: border-box;
-  display: inline-block; }
-
 .box-sizing, * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -61,7 +54,7 @@ table {
   padding: 1em; }
 
 .header-defaults, header h1, header h2 {
-  font-family: "Salsa", cursive;
+  font-family: "Salsa", Arial, cursive;
   color: #a75e3f; }
 
 /* === PHONE === */
@@ -74,7 +67,7 @@ html {
 /*-----BODY -----*/
 body {
   font-size: 16px;
-  font-family: "Lora", serif;
+  font-family: "Lora", Times, serif;
   background-color: #f1edd9;
   color: #444; }
 
@@ -117,26 +110,32 @@ nav {
     list-style: none; }
     nav ul li {
       display: inline-block;
-      margin: .5em .5em; }
+      margin: .5em .5em;
+      padding: .5em 1em; }
       nav ul li a {
         text-decoration: none;
         color: #444; }
+      nav ul li:hover {
+        background-color: rgba(167, 94, 63, 0.3);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; }
 
 /*-----CONTENT -----*/
 #content {
   min-height: 5em; }
   #content h2 {
-    font-family: "Salsa", cursive;
+    font-family: "Salsa", Arial, cursive;
     font-size: 1.6em;
     color: #a75e3f;
     padding-top: 1.5em; }
   #content h3 {
-    font-family: "Salsa", cursive;
+    font-family: "Salsa", Arial, cursive;
     font-size: 1.4em;
     color: #a75e3f;
     padding-top: 1.3em; }
   #content p {
-    font-family: "Lora", serif;
+    font-family: "Lora", Times, serif;
     font-size: 1em;
     color: #B29100;
     padding-top: .6em;
@@ -187,7 +186,6 @@ figure.w50 {
 
 figcaption {
   text-align: center;
-  color: #0006FF;
   font-size: .8em;
   padding: .4em; }
 
@@ -237,14 +235,7 @@ footer {
     /*---blue---*/
     border-bottom: 1px solid rgba(0, 0, 0, 0.8);
     /*---lighter blue---*/
-    color: #FFD72C;
-    background: #0006FF;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0006FF), color-stop(100%, #3338ff));
-    background: -webkit-linear-gradient(top, #0006FF 0%, #3338ff 100%);
-    /*Safari, Chrome*/
-    background: -o-linear-gradient(top, #0006FF 0%, #3338ff 100%);
-    /*Opera on Windows*/
-    background: linear-gradient(to bottom, #0006FF 0%, #3338ff 100%); }
+    color: #FFD72C; }
   nav ul li a:hover {
     background: #333333; }
   nav ul li.selected a {
@@ -257,8 +248,7 @@ footer {
     color: rgba(255, 215, 44, 0.7);
     padding: .5em;
     padding-left: 15px;
-    font-size: .7em;
-    background: #0006FF; }
+    font-size: .7em; }
   nav ul li.selected ul li a {
     color: rgba(255, 215, 44, 0.7); }
   nav ul li ul li.selected a {
@@ -286,14 +276,7 @@ footer {
   nav {
     width: 100%;
     float: none;
-    color: #FFD72C;
-    background: #0006FF;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0006FF), color-stop(100%, #3338ff));
-    background: -webkit-linear-gradient(top, #0006FF 0%, #3338ff 100%);
-    /*Safari, Chrome*/
-    background: -o-linear-gradient(top, #0006FF 0%, #3338ff 100%);
-    /*Opera on Windows*/
-    background: linear-gradient(to bottom, #0006FF 0%, #3338ff 100%); }
+    color: #FFD72C; }
     nav ul li {
       float: left;
       border-left: 1px solid rgba(0, 0, 0, 0.8);
@@ -310,8 +293,7 @@ footer {
         width: 10em; }
         nav ul li ul li {
           float: none;
-          /*border-right: none;*/
-          border-bottom: 1px solid #0004B2; }
+          /*border-right: none;*/ }
       nav ul li:hover ul {
         left: auto; }
   /*-----CONTENT -----*/

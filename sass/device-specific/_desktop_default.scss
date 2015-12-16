@@ -67,15 +67,19 @@ nav {
     li{
       display: inline-block;
       margin: .5em .5em;
+      padding: .5em 1em;
 
       a{
         text-decoration: none;
         color: $color-text;
       }
+      &:hover{
+        background-color: $color-hover;
+        @include border-radius(5px);
+      }
     }
   }
 }
-
 
 /*-----CONTENT -----*/
 #content {
@@ -157,7 +161,6 @@ figure.w50 {
 }
 figcaption {
   text-align: center;
-  color: $color-primary;
   font-size: .8em;
   padding: .4em;
 }

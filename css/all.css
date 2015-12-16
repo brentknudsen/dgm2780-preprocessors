@@ -1,0 +1,324 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.card {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: inline-block; }
+
+.box-sizing, * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.article-padding, article {
+  padding: 1em; }
+
+.header-defaults, header h1, header h2 {
+  font-family: "Salsa", cursive;
+  color: #a75e3f; }
+
+/* === PHONE === */
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {
+  -webkit-text-size-adjust: none;
+  margin: 0;
+  padding: 0; }
+
+/*-----BODY -----*/
+body {
+  font-size: 16px;
+  font-family: "Lora", serif;
+  background-color: #f1edd9;
+  color: #444; }
+
+.wrapper {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto; }
+
+/*-----CONTAINER -----*/
+#container {
+  background-color: #f1edd9;
+  /*becomes the nav background color*/
+  width: 100%; }
+
+/*-----HEADER -----*/
+/*---Company Logo---*/
+header {
+  /*background-image: url('../images/bookstoreBanner.png');
+  background-repeat: no-repeat;
+  background-size: cover;*/ }
+  header h1 {
+    float: left;
+    font-size: 2em;
+    margin: .5em 0; }
+  header img {
+    margin: 0 auto;
+    height: 240px;
+    display: block; }
+  header select {
+    width: 96%;
+    margin-left: 2%; }
+
+/*-----NAVigation -----*/
+nav {
+  float: right;
+  padding: .6em 0; }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    nav ul li {
+      display: inline-block;
+      margin: .5em .5em; }
+      nav ul li a {
+        text-decoration: none;
+        color: #444; }
+
+/*-----CONTENT -----*/
+#content {
+  min-height: 5em; }
+  #content h2 {
+    font-family: "Salsa", cursive;
+    font-size: 1.6em;
+    color: #a75e3f;
+    padding-top: 1.5em; }
+  #content h3 {
+    font-family: "Salsa", cursive;
+    font-size: 1.4em;
+    color: #a75e3f;
+    padding-top: 1.3em; }
+  #content p {
+    font-family: "Lora", serif;
+    font-size: 1em;
+    color: #B29100;
+    padding-top: .6em;
+    line-height: 140%; }
+  #content a {
+    color: #f1edd9; }
+  #content ul li {
+    margin-left: 3%;
+    padding: .4em;
+    font-size: .9em;
+    list-style-type: square;
+    color: #a75e3f;
+    line-height: 130%; }
+
+/*---Thumbnail Images---*/
+.thumbnail {
+  float: left;
+  padding: 12px;
+  display: inline-block;
+  width: 25%; }
+  .thumbnail img {
+    width: 100%; }
+
+/*---Columns---*/
+article {
+  clear: both; }
+
+.twocolumn .column {
+  width: 50%;
+  float: left; }
+
+.twocolumn .column:nth-child(odd) {
+  padding-right: 20px; }
+
+.twocolumn .column:nth-child(even) {
+  padding-left: 20px; }
+
+/*---Images---*/
+figure.w50 img {
+  width: 100%; }
+
+figure.w50 {
+  background-color: #f1edd9;
+  width: 41.666%;
+  border: 1px solid #B29100;
+  box-shadow: 1px 1px 4px;
+  margin-top: .6em; }
+
+figcaption {
+  text-align: center;
+  color: #0006FF;
+  font-size: .8em;
+  padding: .4em; }
+
+figure.right {
+  float: right; }
+
+/*----- FOOTER -----*/
+footer {
+  text-align: center;
+  padding: .6em 0; }
+  footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    footer ul li {
+      display: inline-block;
+      margin: 0 .5em; }
+      footer ul li a {
+        text-decoration: none;
+        color: #444; }
+
+/*---Additional---*/
+.clearFix {
+  clear: both; }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* === TABLET === */
+  /*-----BODY -----*/
+  /*-----CONTAINER -----*/
+  /*-----HEADER -----*/
+  header img {
+    width: 180px; }
+  /*-----NAVigation -----*/
+  nav select {
+    display: none; }
+  nav {
+    width: 25%;
+    float: left;
+    padding: 0; }
+  nav ul {
+    display: block; }
+  nav ul li a {
+    display: block;
+    padding: .7em;
+    text-decoration: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /*---blue---*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    /*---lighter blue---*/
+    color: #FFD72C;
+    background: #0006FF;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0006FF), color-stop(100%, #3338ff));
+    background: -webkit-linear-gradient(top, #0006FF 0%, #3338ff 100%);
+    /*Safari, Chrome*/
+    background: -o-linear-gradient(top, #0006FF 0%, #3338ff 100%);
+    /*Opera on Windows*/
+    background: linear-gradient(to bottom, #0006FF 0%, #3338ff 100%); }
+  nav ul li a:hover {
+    background: #333333; }
+  nav ul li.selected a {
+    color: white; }
+  /*---Sub Menu Items---*/
+  nav ul li ul {
+    padding: 0;
+    margin: 0; }
+  nav ul li ul li a {
+    color: rgba(255, 215, 44, 0.7);
+    padding: .5em;
+    padding-left: 15px;
+    font-size: .7em;
+    background: #0006FF; }
+  nav ul li.selected ul li a {
+    color: rgba(255, 215, 44, 0.7); }
+  nav ul li ul li.selected a {
+    color: white; }
+  /*-----CONTENT -----*/
+  #content {
+    width: 75%;
+    float: left; }
+  /*----- FOOTER -----*/ }
+
+@media only screen and (max-width: 480px) {
+  /* === DESKTOP === */
+  /*-----BODY -----*/
+  /*-----WRAPPER -----*/
+  /*-----CONTAINER -----*/
+  #container {
+    margin: 0 auto;
+    border: 1px solid #888; }
+  /*-----HEADER -----*/
+  header {
+    background-color: rgba(0, 4, 178, 0.2); }
+    header img {
+      width: 230px; }
+  /*-----NAVigation -----*/
+  nav {
+    width: 100%;
+    float: none;
+    color: #FFD72C;
+    background: #0006FF;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0006FF), color-stop(100%, #3338ff));
+    background: -webkit-linear-gradient(top, #0006FF 0%, #3338ff 100%);
+    /*Safari, Chrome*/
+    background: -o-linear-gradient(top, #0006FF 0%, #3338ff 100%);
+    /*Opera on Windows*/
+    background: linear-gradient(to bottom, #0006FF 0%, #3338ff 100%); }
+    nav ul li {
+      float: left;
+      border-left: 1px solid rgba(0, 0, 0, 0.8);
+      border-right: 1px solid rgba(255, 255, 255, 0.1); }
+      nav ul li a {
+        background: transparent;
+        border: none;
+        color: #a75e3f;
+        padding: 0 5px; }
+      nav ul li ul {
+        z-index: 99;
+        position: absolute;
+        left: -999em;
+        width: 10em; }
+        nav ul li ul li {
+          float: none;
+          /*border-right: none;*/
+          border-bottom: 1px solid #0004B2; }
+      nav ul li:hover ul {
+        left: auto; }
+  /*-----CONTENT -----*/
+  #content {
+    width: 100%;
+    float: none; }
+  article.col50 {
+    width: 46%;
+    float: left;
+    clear: none; } }

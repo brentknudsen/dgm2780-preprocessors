@@ -1,0 +1,76 @@
+/* === DESKTOP === */
+/*-----BODY -----*/
+*{
+  @extend .box-sizing;
+}
+body {
+
+}
+
+/*-----WRAPPER -----*/
+#wrapper {}
+
+/*-----CONTAINER -----*/
+#container {
+  margin: 0 auto;
+  border: 1px solid #888;
+}
+
+/*-----HEADER -----*/
+header {
+  background-color:rgba(0,4,178,.2);
+  img {
+    width: 230px;
+  }
+}
+
+
+/*-----NAVigation -----*/
+nav {
+  width: 100%;
+  float: none;
+  color: #FFD72C;
+  @include gradient-linear($color-primary, lighten($color-primary,10%));
+  ul {
+    li {
+      float: left;
+      border-left: 1px solid rgba(0,0,0,.8);
+      border-right: 1px solid rgba(255,255,255,.1);
+
+      a {
+        background: transparent;
+        border: none;
+        color: $color-bodyfont;
+        padding: 0 5px;
+      }
+      ul {
+        z-index: 99;
+        position: absolute;
+        left: -999em;
+        width: 10em;
+        li {
+          float: none;
+          /*border-right: none;*/
+          border-bottom: 1px solid $color-secondary;
+        }
+      }
+      &:hover {
+        ul {
+          left: auto;
+        }
+
+      }
+    }
+  }
+}
+
+/*-----CONTENT -----*/
+#content {
+  width: 100%;
+  float: none;
+}
+article.col50 {
+  width: 46%;
+  float: left;
+  clear: none;
+}

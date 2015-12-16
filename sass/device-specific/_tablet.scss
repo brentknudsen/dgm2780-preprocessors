@@ -1,0 +1,71 @@
+/* === TABLET === */
+
+/*-----BODY -----*/
+
+
+
+/*-----CONTAINER -----*/
+#container { }
+
+/*-----HEADER -----*/
+
+header img {
+  width: 180px;
+}
+
+/*-----NAVigation -----*/
+nav select {
+  display: none;
+}
+nav {
+  width: 25%;
+  float: left;
+  padding: 0;
+}
+
+nav ul {
+  display: block;
+}
+
+nav ul li a {
+  display: block;
+  padding: .7em;
+  text-decoration: none;
+  border-top: 1px solid rgba(255,255,255,0.2); /*---blue---*/
+  border-bottom: 1px solid rgba(0,0,0,0.8); /*---lighter blue---*/
+  color: #FFD72C;
+  @include gradient-linear($color-primary,lighten($color-primary,10%));
+}
+nav ul li a:hover {
+  background: #333333;
+}
+nav ul li.selected a {
+  color: white;
+}
+
+/*---Sub Menu Items---*/
+nav ul li ul {
+  padding: 0;
+  margin: 0;
+}
+nav ul li ul li a {
+  color: rgba(255,215,44,0.7);
+  padding: .5em;
+  padding-left: 15px;
+  font-size: .7em;
+  background: $color-primary;
+}
+nav ul li.selected ul li a {
+  color: rgba(255,215,44,0.7);
+}
+nav ul li ul li.selected a {
+  color: white;
+}
+
+/*-----CONTENT -----*/
+#content {
+  width: 75%;
+  float: left;
+}
+
+/*----- FOOTER -----*/

@@ -1,0 +1,20 @@
+@import 'reset';
+@import 'vars';
+
+//MODULES ==================
+
+
+
+//DEVICE SPECIFIC ===============
+@import 'device-specific/_desktop_default';
+
+//TABLET
+@media only screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @import 'device-specific/_tablet';
+}
+
+//PHONE
+@media only screen and (max-width: $phone-max) {
+  @import 'device-specific/_phone';
+}
+

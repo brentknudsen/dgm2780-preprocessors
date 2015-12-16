@@ -1,0 +1,191 @@
+/* === PHONE === */
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {
+  -webkit-text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+}
+*{
+  @extend .box-sizing;
+}
+
+/*-----BODY -----*/
+body {
+  font-size: 16px;
+  font-family: $font-body;
+  background-color: $color-bodybackground;
+  color: $color-text;
+}
+.wrapper{
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+
+/*-----CONTAINER -----*/
+#container {
+  background-color: $color-bodybackground;   /*becomes the nav background color*/
+  width: 100%;
+}
+
+/*-----HEADER -----*/
+
+/*---Company Logo---*/
+header {
+  /*background-image: url('../images/bookstoreBanner.png');
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  h1{
+    float: left;
+    font-size: 2em;
+    margin: .5em 0;
+    @extend .header-defaults;
+  }
+  h2{
+    @extend .header-defaults;
+  }
+  img{
+    margin: 0 auto;
+    height: 240px;
+    display: block;
+  }
+  select {
+    width: 96%;
+    margin-left: 2%;
+  }
+}
+
+/*-----NAVigation -----*/
+nav {
+  float: right;
+  padding: .6em 0;
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      display: inline-block;
+      margin: .5em .5em;
+
+      a{
+        text-decoration: none;
+        color: $color-text;
+      }
+    }
+  }
+}
+
+
+/*-----CONTENT -----*/
+#content {
+  min-height: 5em;
+
+  h2 {
+    font-family: $font-header;
+    font-size: 1.6em;
+    color: $color-bodyfont;
+    padding-top: 1.5em;
+  }
+  h3 {
+    font-family: $font-header;
+    font-size: 1.4em;
+    color: $color-bodyfont;
+    padding-top: 1.3em;
+  }
+  p {
+    font-family: $font-body;
+    font-size: 1em;
+    color: $color-titlefont;
+    padding-top: .6em;
+    line-height: 140%;
+  }
+  a {
+    color: $color-bodybackground;
+  }
+  ul li {
+    margin-left: 3%;
+    padding: .4em;
+    font-size: .9em;
+    list-style-type: square;
+    color: $color-bodyfont;
+    line-height: 130%;
+  }
+}
+
+/*---Thumbnail Images---*/
+.thumbnail {
+  float: left;
+  padding: 12px;
+  display: inline-block;
+  width: 25%;
+  img {
+    width: 100%;
+  }
+}
+
+/*---Columns---*/
+article {
+  @extend .article-padding;
+  clear: both;
+}
+
+.twocolumn {
+  .column{
+    width: 50%;
+    float: left;
+  }
+
+  .column:nth-child(odd) {
+    padding-right: 20px;
+  }
+  .column:nth-child(even) {
+    padding-left: 20px;
+  }
+}
+
+/*---Images---*/
+figure.w50 img {
+  width: 100%;
+}
+figure.w50 {
+  background-color: $color-bodybackground;
+  width: 41.666%;
+  border: 1px solid $color-titlefont;
+  box-shadow: 1px 1px 4px ;
+  margin-top: .6em;
+}
+figcaption {
+  text-align: center;
+  color: $color-primary;
+  font-size: .8em;
+  padding: .4em;
+}
+figure.right {
+  float: right;
+}
+
+/*----- FOOTER -----*/
+footer {
+  text-align: center;
+  padding: .6em 0;
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      display: inline-block;
+      margin: 0 .5em;
+
+      a{
+        text-decoration: none;
+        color: $color-text;
+      }
+    }
+  }
+}
+
+/*---Additional---*/
+.clearFix{
+  clear: both;
+}

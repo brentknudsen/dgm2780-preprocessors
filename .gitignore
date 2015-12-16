@@ -14,7 +14,7 @@
 .Trashes
 *.swp
 *.lock
-.ehthumbs.db
+.thumbs.db
 Thumbs.db
 
 # Project Specific Ignores #

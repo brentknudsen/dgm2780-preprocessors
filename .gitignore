@@ -1,12 +1,10 @@
 # IDE Specific Files #
-######################
 .project
 .idea
 /*.sublime-project
 *.sublime-workspace
 
-# OS generated files #
-######################
+# OS Generated files #
 .DS_Store
 .DS_Store?
 ._*
@@ -17,8 +15,7 @@
 .thumbs.db
 Thumbs.db
 
-# Project Specific Ignores #
-############################
+# Project Specific #
 node_modules
 bower_components
 www
